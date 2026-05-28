@@ -1,0 +1,53 @@
+[
+  {
+    "id": "69c6af6a77acc7ec9ed48e3f",
+    "title": "ARRAIS AMADOR",
+    "certification_level": "arrais",
+    "description": "Habilitação inicial para condução de embarcações em navegação interior. O primeiro passo para quem deseja navegar com autonomia.",
+    "long_description": "O curso de Arrais Amador é a porta de entrada para o mundo da navegação. Prepara o aluno para conduzir embarcações de esporte e recreio nos limites da navegação interior (rios, lagos, baías e canais), com segurança e domínio das normas da Marinha do Brasil. O curso abrange desde legislação marítima até técnicas de navegação, meteorologia básica e primeiros socorros.",
+    "duration_hours": 11,
+    "duration_label": "10+hr teoria + 6hr prática",
+    "price": 100,
+    "price_label": null,
+    "modules": [],
+    "modules_label": "13 módulos + prática",
+    "next_start_date": null,
+    "next_start_label": "EAD + Prática TBD",
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "id": "69c6af6a77acc7ec9ed48e40",
+    "title": "MESTRE AMADOR",
+    "certification_level": "mestre",
+    "description": "Habilitação para navegação costeira. Amplie seus horizontes e navegue além dos limites interiores com competência técnica avançada.",
+    "long_description": "O curso de Mestre Amador capacita o navegador para a navegação costeira, permitindo operar embarcações entre portos nacionais e estrangeiros dentro dos limites da visibilidade da costa. Aprofunda conhecimentos em navegação estimada e costeira, meteorologia aplicada e regulamentações internacionais. É o passo intermediário essencial para quem almeja a certificação máxima de Capitão Amador.",
+    "duration_hours": 16,
+    "duration_label": "16 horas",
+    "price": 350,
+    "price_label": null,
+    "modules": [],
+    "modules_label": "14 módulos",
+    "next_start_date": null,
+    "next_start_label": "EAD + Prática TBD",
+    "image_url": null,
+    "is_active": true
+  },
+  {
+    "id": "69c6af6a77acc7ec9ed48e41",
+    "title": "CAPITÃO AMADOR",
+    "certification_level": "capitao",
+    "description": "A mais alta habilitação amadora. Domínio completo de navegação astronômica, meteorologia oceânica e comando de embarcações sem limites.",
+    "long_description": "O curso de Capitão Amador é a certificação máxima para navegadores amadores no Brasil. Habilita o comandante para navegação sem limites de afastamento da costa, incluindo travessias oceânicas. O programa abrange navegação astronômica com uso de sextante, meteorologia oceânica avançada, planejamento de rotas transoceânicas e todos os aspectos de comando e liderança a bordo. É o ápice da formação náutica amadora.",
+    "duration_hours": 60,
+    "duration_label": null,
+    "price": 1000,
+    "price_label": null,
+    "modules": [],
+    "modules_label": null,
+    "next_start_date": null,
+    "next_start_label": "EAD",
+    "image_url": null,
+    "is_active": true
+  }
+]
