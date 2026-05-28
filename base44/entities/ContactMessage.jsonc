@@ -1,0 +1,34 @@
+{
+  "name": "ContactMessage",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    },
+    "course_interest": {
+      "type": "string",
+      "enum": [
+        "arrais",
+        "mestre",
+        "capitao",
+        "pratica",
+        "internacional",
+        "general"
+      ]
+    }
+  },
+  "required": [
+    "name",
+    "email",
+    "message"
+  ]
+}
