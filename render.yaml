@@ -1,0 +1,17 @@
+# Render.com — connect Git repo → New → Blueprint (or Web Service with these settings)
+
+services:
+  - type: web
+    name: nautk-web
+    runtime: node
+    plan: free
+    buildCommand: npm install --include=dev && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: NPM_CONFIG_PRODUCTION
+        value: "false"
+      - key: MAIL_TO
+        value: contato@nautk.org
