@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 210 100% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 210 100% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 100% 10%;
+    --primary: 210 100% 10%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 210 100% 10%;
+    --muted: 0 0% 90%;
+    --muted-foreground: 210 20% 40%;
+    --accent: 22 85% 62%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 22 85% 62%;
+    --chart-1: 22 85% 62%;
+    --chart-2: 210 100% 10%;
+    --chart-3: 0 0% 60%;
+    --chart-4: 210 50% 30%;
+    --chart-5: 20 80% 60%;
+    --radius: 0.25rem;
+
+    --font-archivo: 'Archivo Black', sans-serif;
+    --font-inter: 'Inter', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+
+    --sidebar-background: 210 100% 10%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 20 100% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 80% 15%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 210 50% 20%;
+    --sidebar-ring: 20 100% 50%;
+  }
+
+  .dark {
+    --background: 210 100% 5%;
+    --foreground: 0 0% 98%;
+    --card: 210 100% 8%;
+    --card-foreground: 0 0% 98%;
+    --popover: 210 100% 8%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 210 100% 10%;
+    --secondary: 210 50% 15%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 210 50% 15%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 20 100% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 210 50% 15%;
+    --input: 210 50% 15%;
+    --ring: 20 100% 50%;
+    --chart-1: 20 100% 50%;
+    --chart-2: 210 100% 10%;
+    --chart-3: 0 0% 60%;
+    --chart-4: 210 50% 30%;
+    --chart-5: 20 80% 60%;
+    --sidebar-background: 210 100% 5%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 20 100% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 80% 12%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 210 50% 15%;
+    --sidebar-ring: 20 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-inter;
+  }
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted));
+  border-radius: 3px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
