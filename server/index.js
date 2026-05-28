@@ -74,10 +74,15 @@ const courseLabels = {
 async function sendMail({ subject, html }) {
   const to = process.env.MAIL_TO || 'contato@nautk.org';
   if (process.env.SMTP_HOST) {
+    const port = Number(process.env.SMTP_PORT || 587);
+    // Port 465 = implicit SSL (secure: true). Port 587 = STARTTLS (secure: false).
+    const secure = process.env.SMTP_SECURE === 'true'
+      || (process.env.SMTP_SECURE !== 'false' && port === 465);
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
-      port: Number(process.env.SMTP_PORT || 587),
-      secure: process.env.SMTP_SECURE === 'true',
+      port,
+      secure,
+      requireTLS: !secure,
       auth: process.env.SMTP_USER
         ? { user: process.env.SMTP_USER, pass: process.env.SMTP_PASS }
         : undefined,
