@@ -81,13 +81,13 @@ export default function Footer() {
           <div>
             <h4 className="font-mono text-xs tracking-[0.2em] text-orange mb-6">CERTIFICAÇÕES</h4>
             <nav className="flex flex-col gap-3">
-              <Link to="/course/arrais" className="text-sm text-white/60 hover:text-orange transition-colors duration-300 ease-ship flex items-center gap-2">
+              <Link to="/curso/arrais" className="text-sm text-white/60 hover:text-orange transition-colors duration-300 ease-ship flex items-center gap-2">
                 <Anchor className="w-3 h-3" /> Arrais Amador
               </Link>
-              <Link to="/course/mestre" className="text-sm text-white/60 hover:text-orange transition-colors duration-300 ease-ship flex items-center gap-2">
+              <Link to="/curso/mestre" className="text-sm text-white/60 hover:text-orange transition-colors duration-300 ease-ship flex items-center gap-2">
                 <Navigation className="w-3 h-3" /> Mestre Amador
               </Link>
-              <Link to="/course/capitao" className="text-sm text-white/60 hover:text-orange transition-colors duration-300 ease-ship flex items-center gap-2">
+              <Link to="/curso/capitao" className="text-sm text-white/60 hover:text-orange transition-colors duration-300 ease-ship flex items-center gap-2">
                 <Compass className="w-3 h-3" /> Capitão Amador
               </Link>
               <Link to="/#international" onClick={(e) => handleNavClick(e, '/#international')} className="text-sm text-white/60 hover:text-orange transition-colors duration-300 ease-ship flex items-center gap-2">
