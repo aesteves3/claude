@@ -12,7 +12,7 @@ const secoes = [
       {
         name: 'Armando Esteves',
         alias: 'YachtMaster',
-        image: 'https://media.base44.com/images/public/69c6ae1aa394aee53ff11055/c0af6a91d_ArmandoEsteves12.jpg',
+        image: '/images/cmd-armando.jpg',
         description:
           'Rigor técnico de suas certificações nacionais e internacionais como Instrutor Náutico unido a uma paixão genuína pela vida ao vento. Traduz a complexidade da arte de navegar em um aprendizado prático e seguro, expertise que se materializa no comando de seu próprio veleiro, o Wind-34 Manawa.',
         tags: ['Educação náutica', 'Navegação oceânica'],
@@ -21,7 +21,7 @@ const secoes = [
       {
         name: 'Clauberto Andrade',
         alias: 'Capitão Clauberto',
-        image: 'https://media.base44.com/images/public/69c6ae1aa394aee53ff11055/822eafe3e_ClaubertoAndrade11.jpg',
+        image: '/images/cmd-clauberto.jpg',
         description:
           'Referência na instrução de vela e na formação de novos velejadores no litoral paulista. Participa com destaque em competições de vela oceânicas renomadas, guiando e orientando tripulações de alunos em atividades práticas adversas e reais.',
         tags: ['Instrutor', 'Práticas', 'Regatas'],
@@ -30,7 +30,7 @@ const secoes = [
       {
         name: 'Pedro Rodrigues',
         alias: 'BL3',
-        image: 'https://media.base44.com/images/public/69c6ae1aa394aee53ff11055/70c30f410_PedroRodrigues2.jpg',
+        image: '/images/cmd-pedro.jpg',
         description:
           'Consolidado como um dos pilares da náutica brasileira ao fundar a BL3 Escola de Vela, instituição que se tornou referência nacional na democratização e no ensino técnico do esporte. Sua influência transcende a instrução básica, tendo sido um agente fundamental na transformação de Ilhabela na Capital Nacional da Vela e na formação de gerações de velejadores.',
         tags: ['Escola Náutica'],
@@ -39,7 +39,7 @@ const secoes = [
       {
         name: 'Leonardo Soldon',
         alias: 'Kaluanã',
-        image: 'https://media.base44.com/images/public/69c6ae1aa394aee53ff11055/dc3b5c39a_LeonardoSoldon12.jpg',
+        image: '/images/cmd-leonardo.jpg',
         description:
           'Campeão brasileiro de vela oceânica e uma longa vivência no mar. Vindo do mundo corporativo, onde atuou em áreas estratégicas de desenvolvimento humano, uniu essas duas paixões ao criar a Escola de Vela Kaluanã, um espaço onde líderes e equipes vivem experiências práticas e transformadoras a bordo de veleiros de oceano.',
         tags: ['Escola Náutica'],
@@ -55,7 +55,7 @@ const secoes = [
       {
         name: 'Charlie Flesch',
         alias: 'Homo Zarpiens',
-        image: 'https://media.base44.com/images/public/69c6ae1aa394aee53ff11055/9f514aefd_CharlieFlesch1.jpg',
+        image: '/images/cmd-charlie.jpg',
         description:
           'Velejador e criador de conteúdo náutico, Charlie Flesch navega o mundo a bordo do seu veleiro documentando a vida no mar com humor, autenticidade e muita aventura. Referência para quem sonha em zarpar rumo ao desconhecido.',
         tags: ['Veleiro', 'Conteúdo náutico', 'Volta ao mundo'],
@@ -68,7 +68,7 @@ const secoes = [
       {
         name: 'Adriano Plotzki',
         alias: '#Sal',
-        image: 'https://media.base44.com/images/public/69c6ae1aa394aee53ff11055/0c5201ab1_AdrianoPlotzki13.jpg',
+        image: '/images/cmd-adriano.jpg',
         description:
           'Navegador apaixonado que compartilha a vida no mar com uma comunicação direta e inspiradora. Seus vídeos e posts mostram travessias oceânicas, técnicas de navegação e a filosofia de vida que o mar proporciona.',
         tags: ['Oceânico', 'Travessias', 'Estilo de vida náutico'],
@@ -80,7 +80,7 @@ const secoes = [
       {
         name: 'Velho Jack',
         alias: 'Velho Jack SN',
-        image: 'https://media.base44.com/images/public/69c6ae1aa394aee53ff11055/9e58c5268_VelhoJack21.jpg',
+        image: '/images/cmd-velho-jack.jpg',
         description:
           'Especialista náutico conhecido por seu trabalho com manutenção e vistorias de veleiros. Influente na comunidade náutica brasileira, compartilhando conhecimento técnico e o cotidiano da vida no mar.',
         tags: ['Vela', 'Comunidade náutica', 'Aprendizado'],
@@ -93,7 +93,7 @@ const secoes = [
       {
         name: 'Aleixo Belov',
         alias: 'Fundação Aleixo Belov',
-        image: 'https://media.base44.com/images/public/69c6ae1aa394aee53ff11055/19e5002bf_AleixoBelov1.webp',
+        image: '/images/cmd-aleixo.webp',
         description:
           'Lenda viva da náutica brasileira. Aleixo Belov dedicou sua vida ao mar e à preservação da cultura marítima nacional. Sua fundação e o Museu do Mar são patrimônios do velejador brasileiro.',
         tags: ['Oceânico', 'Cultura marítima', 'Museu do Mar'],
@@ -106,7 +106,7 @@ const secoes = [
       {
         name: 'Tamara Klink',
         alias: 'Velejadora Oceânica',
-        image: 'https://media.base44.com/images/public/69c6ae1aa394aee53ff11055/4c497633e_TamaraKlink11.jpg',
+        image: '/images/cmd-tamara.jpg',
         description:
           'Uma das mais respeitadas navegadoras oceânicas do Brasil, Tamara realizou travessias solo de grande destaque internacional. Sua trajetória é inspiração para toda uma geração de mulheres na náutica.',
         tags: ['Solo oceânico', 'Travessias atlânticas', 'Inspiração feminina'],
@@ -118,7 +118,7 @@ const secoes = [
       {
         name: 'Giovanni Dolif',
         alias: '#Céu',
-        image: 'https://media.base44.com/images/public/69c6ae1aa394aee53ff11055/894a766c0_GiovanniDolif12.jpg',
+        image: '/images/cmd-giovanni.jpg',
         description:
           'Navegador, renomado meteorologista e pesquisador que une o rigor acadêmico à experiência prática. Dedicação ao ensino da meteorologia aplicada, onde traduz dados complexos em ferramentas estratégicas para velejadores e navegantes.',
         tags: ['Meteorologia', 'Expedições', 'Pesquisa náutica'],
