@@ -1,4 +1,5 @@
 import React from 'react';
+import usePageMeta from '../hooks/usePageMeta';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ExternalLink, BookOpen, Globe, Anchor, Navigation, Compass, FileText, Map, Wind, Waves } from 'lucide-react';
@@ -115,6 +116,10 @@ const categories = [
 ];
 
 export default function References() {
+  usePageMeta(
+    'Referências e Materiais Náuticos',
+    'Referências, regulamentos e materiais de estudo para navegação. Normas da Marinha do Brasil, cartas náuticas, publicações e links úteis para navegadores amadores.'
+  );
   return (
     <div className="pt-20 min-h-screen bg-background">
       {/* Hero */}

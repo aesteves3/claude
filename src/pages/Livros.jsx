@@ -1,4 +1,5 @@
 import React from 'react';
+import usePageMeta from '../hooks/usePageMeta';
 import { motion } from 'framer-motion';
 import { BookOpen, ExternalLink, Star, Anchor, Navigation, Compass, Globe, Cloud } from 'lucide-react';
 
@@ -125,6 +126,10 @@ const levelColors = {
 };
 
 export default function Livros() {
+  usePageMeta(
+    'Livros de Náutica Recomendados',
+    'Livros e publicações recomendados pelo NAUTK para estudo de navegação. Obras essenciais para a preparação às provas da Marinha do Brasil e certificações internacionais.'
+  );
   return (
     <div className="pt-20">
       {/* Hero */}

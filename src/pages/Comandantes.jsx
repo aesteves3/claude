@@ -1,4 +1,5 @@
 import React from 'react';
+import usePageMeta from '../hooks/usePageMeta';
 import { motion } from 'framer-motion';
 import { Youtube, Instagram, Globe, Anchor } from 'lucide-react';
 
@@ -221,6 +222,10 @@ const PessoaCard = ({ pessoa, idx }) => (
 );
 
 export default function Comandantes() {
+  usePageMeta(
+    'Comandantes e Instrutores Náuticos',
+    'Conheça os comandantes e instrutores certificados do NAUTK. Profissionais com experiência comprovada em navegação e formação náutica pela Marinha do Brasil.'
+  );
   return (
     <div className="pt-20">
       {/* Hero */}
