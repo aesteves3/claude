@@ -25,7 +25,7 @@ function App() {
         <Routes>
           <Route element={<SiteLayout />}>
             <Route path="/" element={<Home />} />
-            <Route path="/course/:level" element={<CourseDetail />} />
+            <Route path="/curso/:level" element={<CourseDetail />} />
             <Route path="/internacional/nauticed" element={<NauticedDetail />} />
             <Route path="/internacional/asa" element={<AsaDetail />} />
             <Route path="/internacional/issa" element={<IssaDetail />} />
