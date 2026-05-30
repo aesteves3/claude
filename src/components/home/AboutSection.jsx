@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Shield, Award, Users, Target } from 'lucide-react';
 
-const ABOUT_IMAGE = 'https://media.base44.com/images/public/69c6ae1aa394aee53ff11055/84f5cf659_generated_43792659.png';
+const ABOUT_IMAGE = '/images/about-sextant.png';
 
 const stats = [
 { icon: Shield, value: '15+', label: 'ANOS DE EXPERIÊNCIA' },
@@ -78,7 +78,20 @@ export default function AboutSection() {
 
             {/* Stats Grid */}
             <div className="grid grid-cols-2 gap-6">
-              {stats.map((stat, index) => null
+              {stats.map((stat, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, ease: [0.23, 1, 0.32, 1], delay: 0.3 + index * 0.1 }}
+                  className="border border-chart-grey p-4"
+                >
+                  <stat.icon className="w-5 h-5 text-orange mb-3" />
+                  <p className="font-archivo text-2xl text-navy mb-1">{stat.value}</p>
+                  <p className="font-mono text-[10px] tracking-[0.2em] text-muted-foreground">{stat.label}</p>
+                </motion.div>
+              ))}
 
 
 
@@ -87,11 +100,6 @@ export default function AboutSection() {
 
 
 
-
-
-
-
-              )}
             </div>
           </div>
         </div>

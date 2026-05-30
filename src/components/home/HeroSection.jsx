@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ChevronDown, Wind, Waves, Navigation } from 'lucide-react';
 
-const HERO_IMAGE = 'https://media.base44.com/images/public/69c6ae1aa394aee53ff11055/ae260c939_generated_109c4ef2.png';
+const HERO_IMAGE = '/images/hero-boat.png';
 
 export default function HeroSection() {
 const coords = { lat: '22°54\'10"S', lon: '43°10\'30"W' };

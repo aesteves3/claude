@@ -146,7 +146,7 @@ export default function InternationalSection() {
                   <p className="font-mono text-xs tracking-[0.25em] text-orange mb-1">PARCEIRA PRÁTICA</p>
                   <h4 className="font-archivo text-xl tracking-wide text-navy">BL3 ESCOLA DE IATISMO</h4>
                 </div>
-                <img src="https://media.base44.com/images/public/69c6ae1aa394aee53ff11055/0e4590e13_bl3_logo.jpeg" alt="BL3" className="w-12 h-12 object-contain rounded-full flex-shrink-0" />
+                <img src="/images/logo-bl3.jpeg" alt="BL3" className="w-12 h-12 object-contain rounded-full flex-shrink-0" />
               </div>
               <div className="flex items-center gap-2 font-mono text-xs text-muted-foreground mb-5">
                 <MapPin className="w-3 h-3 text-orange" />
@@ -179,7 +179,7 @@ export default function InternationalSection() {
                   <p className="font-mono text-xs tracking-[0.25em] text-orange mb-1">PARCEIRA PRÁTICA</p>
                   <h4 className="font-archivo text-xl tracking-wide text-navy">KALUANÃ SAILING TEAM</h4>
                 </div>
-                <img src="https://media.base44.com/images/public/69c6ae1aa394aee53ff11055/c7227be61_kalua_logo.png" alt="Kaluanã" className="w-16 h-10 object-contain flex-shrink-0" />
+                <img src="/images/logo-kalua.png" alt="Kaluanã" className="w-16 h-10 object-contain flex-shrink-0" />
               </div>
               <div className="flex items-center gap-2 font-mono text-xs text-muted-foreground mb-5">
                 <MapPin className="w-3 h-3 text-orange" />

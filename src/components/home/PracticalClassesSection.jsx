@@ -8,7 +8,7 @@ const classes = [
     slug: 'arrais',
     icon: Anchor,
     tag: 'HABILITAÇÃO MARINHA DO BRASIL',
-    image: 'https://media.base44.com/images/public/69c6ae1aa394aee53ff11055/11aa3bea9_generated_image.png',
+    image: '/images/practical-1.png',
     title: 'Prática para Habilitação de Arrais Amador',
     description: [
       'A aula prática de 6 horas é um pré-requisito obrigatório da Marinha do Brasil para quem deseja obter a habilitação de Arrais Amador (condução de embarcações de esporte e recreio).',
@@ -20,7 +20,7 @@ const classes = [
     slug: 'vela',
     icon: Waves,
     tag: 'VELA OCEÂNICA',
-    image: 'https://media.base44.com/images/public/69c6ae1aa394aee53ff11055/b7f5ae85c_generated_image.png',
+    image: '/images/practical-2.png',
     title: 'Prática de Vela Oceânica – Nível Básico',
     description: [
       'Realizado no Canal de São Sebastião, o curso acontece a bordo de veleiro Wind-34. São dois dias de aula, totalizando 12 horas de aulas práticas (6 horas por dia).',
