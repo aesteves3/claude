@@ -20,7 +20,7 @@ export default function CourseCard({ course, index, image }) {
       transition={{ duration: 0.7, ease: [0.23, 1, 0.32, 1], delay: index * 0.15 }}
       className="group relative">
       
-      <Link to={`/course/${course.certification_level}`} className="block">
+      <Link to={`/curso/${course.certification_level}`} className="block">
         {/* Image Container */}
         <div className="relative overflow-hidden aspect-[3/2] mb-6">
           <img
