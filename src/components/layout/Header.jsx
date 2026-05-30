@@ -64,7 +64,7 @@ export default function Header() {
         <div className="max-w-[1440px] mx-auto px-6 md:px-12 flex items-center justify-between h-16 md:h-20">
           <Link to="/" className="flex items-center group" onClick={() => { setIsOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>
             <img
-              src="https://media.base44.com/images/public/69c6ae1aa394aee53ff11055/f408f3d67_noBgColor.png"
+              src="/images/logo.png"
               alt="NAUTK"
               className={`h-8 object-contain transition-all duration-500 ease-ship ${solidHeader ? 'brightness-50' : 'brightness-0 invert'}`}
             />

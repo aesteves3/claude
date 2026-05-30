@@ -40,7 +40,7 @@ export default function Footer() {
           <div className="md:col-span-1">
             <div className="flex items-center mb-6">
               <img
-                src="https://media.base44.com/images/public/69c6ae1aa394aee53ff11055/f408f3d67_noBgColor.png"
+                src="/images/logo.png"
                 alt="NAUTK"
                 className="h-8 object-contain brightness-0 invert opacity-80"
               />
