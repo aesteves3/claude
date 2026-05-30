@@ -1,5 +1,5 @@
-export const SAILING_IMAGE = 'https://media.base44.com/images/public/69c6ae1aa394aee53ff11055/c8beb4887_generated_image.png';
-export const CERT_IMAGE = 'https://media.base44.com/images/public/69c6ae1aa394aee53ff11055/8f00c8f24_generated_image.png';
+export const SAILING_IMAGE = '/images/intl-sailing.png';
+export const CERT_IMAGE = '/images/intl-cert.png';
 
 export const nauticedCourses = [
   {
