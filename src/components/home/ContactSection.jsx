@@ -64,8 +64,8 @@ export default function ContactSection() {
                 <span>São Paulo, Ilhabela, Represa Guarapiranga</span>
               </div>
               <div className="flex items-center gap-4">
-                <span className="text-xs tracking-[0.2em] text-orange w-16">Whatsapp</span>
-                <span>+55 (11) 91311-2332</span>
+                <span className="text-xs tracking-[0.2em] text-orange w-16">WHATSAPP</span>
+                <a href="https://wa.me/5511913112332" target="_blank" rel="noopener noreferrer" className="hover:text-orange transition-colors duration-300">+55 (11) 91311-2332</a>
               </div>
               <div className="flex items-center gap-4">
                 <span className="text-xs tracking-[0.2em] text-orange w-16">EMAIL</span>
