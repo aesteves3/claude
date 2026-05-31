@@ -119,11 +119,11 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="font-mono text-xs text-white/30 tracking-wider">
-            © 2026 NAUTK — INSTITUTO DE COMANDO MARÍTIMO
+            © 2026 NAUTK — INSTITUTO DE COMANDO NÁUTICO
           </p>
           <div className="flex items-center gap-2">
             <span className="font-mono text-xs text-white/30 tracking-wider">
-              LAT 22°54'S &nbsp; LON 43°10'W
+              LAT 23°47'S &nbsp; LON 45°21'W
             </span>
           </div>
         </div>
