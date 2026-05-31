@@ -7,7 +7,7 @@ import { useEffect } from 'react';
  */
 export default function usePageMeta(title, description) {
   useEffect(() => {
-    document.title = title ? `${title} | NAUTK` : 'NAUTK — Instituto de Comando Marítimo';
+    document.title = title ? `${title} | NAUTK` : 'NAUTK — Instituto de Comando Náutico';
 
     let metaDesc = document.querySelector('meta[name="description"]');
     if (!metaDesc) {
