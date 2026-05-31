@@ -1,15 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Shield, Award, Users, Target } from 'lucide-react';
 
 const ABOUT_IMAGE = '/images/about-sextant.png';
-
-const stats = [
-{ icon: Shield, value: '15+', label: 'ANOS DE EXPERIÊNCIA' },
-{ icon: Users, value: '2.500+', label: 'NAVEGADORES FORMADOS' },
-{ icon: Award, value: '98%', label: 'TAXA DE APROVAÇÃO' },
-{ icon: Target, value: '3', label: 'NÍVEIS DE CERTIFICAÇÃO' }];
-
 
 export default function AboutSection() {
   return (
@@ -27,9 +19,8 @@ export default function AboutSection() {
             <div className="relative overflow-hidden aspect-[4/3]">
               <img
                 src={ABOUT_IMAGE}
-                alt="Brass sextant on nautical chart"
+                alt="Sextante náutico sobre carta de navegação"
                 className="w-full h-full object-cover" />
-              
             </div>
             {/* Decorative corner */}
             <div className="absolute -bottom-4 -right-4 w-24 h-24 border border-orange/30" />
@@ -43,7 +34,6 @@ export default function AboutSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, ease: [0.23, 1, 0.32, 1] }}
               className="font-mono text-xs tracking-[0.3em] text-orange mb-4">
-              
               SOBRE O INSTITUTO
             </motion.p>
             <motion.h2
@@ -52,7 +42,6 @@ export default function AboutSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, ease: [0.23, 1, 0.32, 1], delay: 0.1 }}
               className="font-archivo text-3xl md:text-4xl tracking-wide text-navy mb-6">
-              
               PRECISÃO É
               <br />
               NOSSO RUMO
@@ -63,7 +52,6 @@ export default function AboutSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, ease: [0.23, 1, 0.32, 1], delay: 0.2 }}
               className="font-inter text-base text-muted-foreground leading-relaxed mb-8">
-              
               A NAUTK é um instituto de formação náutica dedicado à preparação de navegadores para as certificações oficiais da Marinha do Brasil. Nossa metodologia combina instrução teórica rigorosa com experiência prática em embarcações, garantindo que cada aluno esteja totalmente preparado para os exames e para o mar.
             </motion.p>
             <motion.p
@@ -71,39 +59,12 @@ export default function AboutSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, ease: [0.23, 1, 0.32, 1], delay: 0.3 }}
-              className="font-inter text-base text-muted-foreground leading-relaxed mb-12">
-              
+              className="font-inter text-base text-muted-foreground leading-relaxed">
               Com instrutores certificados Nacional e Internacionalmente e anos de experiência em águas brasileiras, oferecemos cursos que vão desde a habilitação inicial de Arrais Amador até a formação completa de Capitão Amador.
             </motion.p>
-
-            {/* Stats Grid */}
-            <div className="grid grid-cols-2 gap-6">
-              {stats.map((stat, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 10 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, ease: [0.23, 1, 0.32, 1], delay: 0.3 + index * 0.1 }}
-                  className="border border-chart-grey p-4"
-                >
-                  <stat.icon className="w-5 h-5 text-orange mb-3" />
-                  <p className="font-archivo text-2xl text-navy mb-1">{stat.value}</p>
-                  <p className="font-mono text-[10px] tracking-[0.2em] text-muted-foreground">{stat.label}</p>
-                </motion.div>
-              ))}
-
-
-
-
-
-
-
-
-            </div>
           </div>
         </div>
       </div>
-    </section>);
-
+    </section>
+  );
 }
