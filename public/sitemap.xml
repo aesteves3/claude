@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://nautk.org/</loc><priority>1.0</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://nautk.org/curso/arrais</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://nautk.org/curso/mestre</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://nautk.org/curso/capitao</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://nautk.org/pratica/arrais</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://nautk.org/pratica/vela</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://nautk.org/internacional/nauticed</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://nautk.org/internacional/asa</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://nautk.org/internacional/issa</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://nautk.org/referencias</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://nautk.org/livros</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://nautk.org/comandantes</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+</urlset>
