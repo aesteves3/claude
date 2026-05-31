@@ -46,7 +46,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-sm leading-relaxed text-white/50">
-              Instituto de Comando Marítimo. Formando navegadores com excelência e precisão desde o primeiro rumo.
+              Instituto de Comando Náutico. Formando navegadores com excelência e precisão desde o primeiro rumo.
             </p>
           </div>
 
