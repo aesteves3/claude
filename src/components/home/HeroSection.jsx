@@ -5,7 +5,7 @@ import { ChevronDown, Wind, Waves, Navigation } from 'lucide-react';
 const HERO_IMAGE = '/images/hero-boat.png';
 
 export default function HeroSection() {
-const coords = { lat: '22°54\'10"S', lon: '43°10\'30"W' };
+const coords = { lat: '23°47\'10"S', lon: '45°21\'32"W' };
 
   return (
     <section className="relative h-screen w-full overflow-hidden">
