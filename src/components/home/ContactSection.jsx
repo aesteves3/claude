@@ -55,7 +55,7 @@ export default function ContactSection() {
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
               className="font-inter text-base text-muted-foreground leading-relaxed mb-12 max-w-md">
-              Nossos assessores marítimos estão prontos para orientar você na escolha do curso ideal para o seu nível de experiência e objetivos de navegação.
+              Nossos assessores náuticos estão prontos para orientar você na escolha do curso ideal para o seu nível de experiência e objetivos de navegação.
             </motion.p>
 
             <div className="space-y-4 font-mono text-sm text-muted-foreground">
