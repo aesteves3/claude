@@ -53,7 +53,7 @@ const coords = { lat: '22°54\'10"S', lon: '43°10\'30"W' };
             transition={{ duration: 0.6, ease: [0.23, 1, 0.32, 1], delay: 0.3 }}
             className="font-mono text-xs md:text-sm tracking-[0.3em] text-orange mb-6"
           >
-            INSTITUTO DE COMANDO MARÍTIMO
+            INSTITUTO DE COMANDO NÁUTICO
           </motion.p>
 
           <motion.h1
