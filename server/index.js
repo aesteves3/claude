@@ -4,7 +4,7 @@ import express from 'express';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import nodemailer from 'nodemailer';
+import { sendMail } from './email.js';
 
 dotenv.config({ path: path.join(path.dirname(fileURLToPath(import.meta.url)), '.env') });
 
@@ -70,33 +70,6 @@ const courseLabels = {
   internacional: 'Internacional',
   general: 'Geral',
 };
-
-async function sendMail({ subject, html }) {
-  const to = process.env.MAIL_TO || 'contato@nautk.org';
-  if (process.env.SMTP_HOST) {
-    const port = Number(process.env.SMTP_PORT || 587);
-    // Port 465 = implicit SSL (secure: true). Port 587 = STARTTLS (secure: false).
-    const secure = process.env.SMTP_SECURE === 'true'
-      || (process.env.SMTP_SECURE !== 'false' && port === 465);
-    const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST,
-      port,
-      secure,
-      requireTLS: !secure,
-      auth: process.env.SMTP_USER
-        ? { user: process.env.SMTP_USER, pass: process.env.SMTP_PASS }
-        : undefined,
-    });
-    await transporter.sendMail({
-      from: process.env.MAIL_FROM || process.env.SMTP_USER || to,
-      to,
-      subject,
-      html,
-    });
-    return;
-  }
-  console.log('[email skipped — configure SMTP in server/.env]', subject);
-}
 
 app.get('/api/health', (_req, res) => {
   res.json({ ok: true });
@@ -188,6 +161,11 @@ if (fs.existsSync(distPath)) {
   app.use(express.static(distPath));
   app.get('*', (req, res, next) => {
     if (req.path.startsWith('/api')) return next();
+    // Serve pre-rendered HTML if it exists (from vite-plugin-prerender)
+    const prerendered = path.join(distPath, req.path, 'index.html');
+    if (fs.existsSync(prerendered)) {
+      return res.sendFile(prerendered);
+    }
     res.sendFile(path.join(distPath, 'index.html'));
   });
 }
@@ -199,6 +177,11 @@ app.listen(port, host, () => {
   console.log(`Project root: ${root}`);
   console.log(`Courses: ${coursesFile || 'NOT FOUND — run npm run build'}`);
   console.log(`Static dist: ${fs.existsSync(path.join(root, 'dist')) ? 'yes' : 'no'}`);
+  console.log(`[email config] MAIL_HOST=${process.env.MAIL_HOST ? 'SET' : 'MISSING'}`);
+  console.log(`[email config] MAIL_PORT=${process.env.MAIL_PORT ? 'SET' : 'MISSING'}`);
+  console.log(`[email config] MAIL_USERNAME=${process.env.MAIL_USERNAME ? 'SET' : 'MISSING'}`);
+  console.log(`[email config] MAIL_PASSWORD=${process.env.MAIL_PASSWORD ? 'SET' : 'MISSING'}`);
+  console.log(`[email config] MAIL_TO=${process.env.MAIL_TO ? 'SET' : 'MISSING'}`);
 });
 
 process.on('uncaughtException', (err) => {
