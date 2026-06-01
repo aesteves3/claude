@@ -161,7 +161,6 @@ if (fs.existsSync(distPath)) {
   app.use(express.static(distPath));
   app.get('*', (req, res, next) => {
     if (req.path.startsWith('/api')) return next();
-    // Serve pre-rendered HTML if it exists (from vite-plugin-prerender)
     const prerendered = path.join(distPath, req.path, 'index.html');
     if (fs.existsSync(prerendered)) {
       return res.sendFile(prerendered);
@@ -177,11 +176,6 @@ app.listen(port, host, () => {
   console.log(`Project root: ${root}`);
   console.log(`Courses: ${coursesFile || 'NOT FOUND — run npm run build'}`);
   console.log(`Static dist: ${fs.existsSync(path.join(root, 'dist')) ? 'yes' : 'no'}`);
-  console.log(`[email config] MAIL_HOST=${process.env.MAIL_HOST ? 'SET' : 'MISSING'}`);
-  console.log(`[email config] MAIL_PORT=${process.env.MAIL_PORT ? 'SET' : 'MISSING'}`);
-  console.log(`[email config] MAIL_USERNAME=${process.env.MAIL_USERNAME ? 'SET' : 'MISSING'}`);
-  console.log(`[email config] MAIL_PASSWORD=${process.env.MAIL_PASSWORD ? 'SET' : 'MISSING'}`);
-  console.log(`[email config] MAIL_TO=${process.env.MAIL_TO ? 'SET' : 'MISSING'}`);
 });
 
 process.on('uncaughtException', (err) => {
