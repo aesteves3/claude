@@ -95,7 +95,7 @@ app.post('/api/contact', async (req, res) => {
     const record = appendJson('contact-messages.json', {
       name, email, phone, course_interest, message,
     });
-    const subject = `[NAUTK] Nova mensagem de contato – ${name}`;
+    const subject = `[NAUTK] Mensagem de Contato – ${name}`;
     const html = `
       <h2>Nova mensagem de contato</h2>
       <p><strong>Nome:</strong> ${escapeHtml(name)}</p>
