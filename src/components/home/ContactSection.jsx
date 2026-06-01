@@ -172,7 +172,7 @@ export default function ContactSection() {
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.95 }}
                   transition={{ duration: 0.4, ease: [0.23, 1, 0.32, 1] }}
-                  className="absolute inset-0 flex flex-col items-center justify-center text-center p-7"
+                  className="absolute inset-8 flex flex-col items-center justify-center text-center p-10"
                   style={{
                     background: status === 'success'
                       ? 'linear-gradient(135deg, #001A33 0%, #002244 100%)'
@@ -191,27 +191,27 @@ export default function ContactSection() {
                   </button>
 
                   {/* Icon */}
-                  <div className={`p-3 mb-4 ${status === 'success' ? 'border border-orange/50' : 'border border-red-500/40'}`}>
+                  <div className={`p-5 mb-6 ${status === 'success' ? 'border border-orange/50' : 'border border-red-500/40'}`}>
                     {status === 'success'
-                      ? <Anchor className="w-7 h-7 text-orange" />
-                      : <AlertTriangle className="w-7 h-7 text-red-400" />}
+                      ? <Anchor className="w-10 h-10 text-orange" />
+                      : <AlertTriangle className="w-10 h-10 text-red-400" />}
                   </div>
 
                   {/* Label */}
-                  <p className={`font-mono text-xs tracking-[0.4em] mb-2 ${status === 'success' ? 'text-orange' : 'text-red-400'}`}>
+                  <p className={`font-mono text-xs tracking-[0.4em] mb-3 ${status === 'success' ? 'text-orange' : 'text-red-400'}`}>
                     {status === 'success' ? 'TRANSMISSÃO CONFIRMADA' : 'FALHA NA TRANSMISSÃO'}
                   </p>
 
                   {/* Headline */}
-                  <h3 className="font-archivo text-2xl md:text-3xl tracking-wide text-white mb-4">
+                  <h3 className="font-archivo text-3xl md:text-4xl tracking-wide text-white mb-5">
                     {status === 'success' ? 'SINAL RECEBIDO' : 'SINAL PERDIDO'}
                   </h3>
 
                   {/* Divider */}
-                  <div className={`w-10 h-px mb-4 ${status === 'success' ? 'bg-orange/50' : 'bg-red-500/40'}`} />
+                  <div className={`w-12 h-px mb-5 ${status === 'success' ? 'bg-orange/50' : 'bg-red-500/40'}`} />
 
                   {/* Body */}
-                  <p className="font-inter text-sm text-white/60 leading-relaxed max-w-xs mb-6">
+                  <p className="font-inter text-sm text-white/60 leading-relaxed max-w-xs mb-8">
                     {status === 'success'
                       ? 'Sua mensagem foi enviada com sucesso. Nossa equipe entrará em contato em breve.'
                       : errorMsg}
