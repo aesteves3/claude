@@ -39,16 +39,26 @@ function App() {
         </Routes>
         <Toaster />
         <SonnerToaster
-          position="top-right"
+          position="bottom-right"
+          offset={24}
+          gap={8}
           toastOptions={{
+            duration: 4000,
             style: {
               background: '#001A33',
               color: '#ffffff',
-              border: '1px solid #E8723A',
-              borderRadius: '2px',
+              border: '1px solid rgba(229,114,58,0.4)',
+              borderRadius: '0px',
               fontFamily: 'var(--font-mono)',
-              fontSize: '12px',
-              letterSpacing: '0.1em',
+              fontSize: '11px',
+              letterSpacing: '0.12em',
+              padding: '14px 18px',
+              boxShadow: '0 8px 32px rgba(0,0,0,0.4)',
+              textTransform: 'uppercase',
+            },
+            classNames: {
+              success: 'border-l-2 border-l-[#E8723A]',
+              error: 'border-l-2 border-l-red-500',
             },
           }}
         />
